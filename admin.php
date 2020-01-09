@@ -4,6 +4,7 @@ class TX_Admin {
 
 	public function __construct() {
 		add_action('admin_menu', array($this, 'admin_menu'), 50);
+		
 		add_action('wp_ajax_import_product_cat', array($this, 'import_product_cat'));
 		add_action('wp_ajax_import_products_cat', array($this, 'import_products_cat'));
 		add_action('wp_ajax_delete_attachment', array($this, 'delete_attachment'));
